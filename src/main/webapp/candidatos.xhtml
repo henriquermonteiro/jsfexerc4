@@ -16,7 +16,7 @@ and open the template in the editor.
         <h:form>
             <h:dataTable id="cadastro"
                          summary="Cesta de compras"
-                         value="#{registroBean.CandidatosList}"
+                         value="#{registroBean.candidatosList}"
                          border="1"
                          var="pess">
                 <h:column>
@@ -28,22 +28,21 @@ and open the template in the editor.
                 <h:column>
                     <f:facet name="header">
                         <h:outputText value="Nome"/>
-                    <h:outputText value="#{pess.nome}" />
                     </f:facet>
+                    <h:outputText value="#{pess.nome}" />
                 </h:column>
                 <h:column>
                     <f:facet name="header">
                         <h:outputText value="Cidade"/>
-                    <h:outputText value="#{pess.cidade}" />
                     </f:facet>
+                    <h:outputText value="#{pess.cidade}" />
                 </h:column>
                 <h:column>
                     <f:facet name="header">
                         <h:outputText value="Estado"/>
-                    <h:outputText value="#{pess.estado}" />
                     </f:facet>
+                    <h:outputText value="#{pess.estado}" />
                 </h:column>
-                </f:facet>
             </h:dataTable>
         </h:form>
     </body>

@@ -16,7 +16,7 @@ import utfpr.faces.support.PageBean;
  *
  * @author Henrique
  */
-@ManagedBean
+@ManagedBean(name = "registroBean")
 @ApplicationScoped
 public class RegistroBean extends PageBean {
     private ArrayList<Candidato> candidatosList;
@@ -30,6 +30,7 @@ public class RegistroBean extends PageBean {
     }
 
     public RegistroBean() {
+        candidatosList = new ArrayList<>();
     }
     
     
